@@ -96,6 +96,12 @@
           }
         ]
       }
+    },
+    "test-env": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "FOO=BAR scripts/env-test.sh"
+      }
     }
   },
   "tags": ["type:app", "scope:products"],

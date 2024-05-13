@@ -94,6 +94,13 @@
           }
         ]
       }
+    },
+    "test-env": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "scripts/env-test.sh",
+        "env": { "FOO": "BAR" }
+      }
     }
   },
   "tags": ["type:app", "scope:cart"],
